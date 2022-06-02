@@ -77,11 +77,9 @@ nav ul li {
 
 }
 
-h2,
-
-h1 {
+h2,h1 {
+    margin: 10px;
     color: #f8edeb;
-    font-size: 30px;
     font-weight: bold;
     font-family: "FreeBooters";
     text-shadow: 0 0 1px black;
