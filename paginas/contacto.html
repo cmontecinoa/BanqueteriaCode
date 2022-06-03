@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favy | Contáctanos </title>
     <link rel="icon" type="image/ico" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
 
     <!--Navegación-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <header>
+                    <div class="contTitulo"><a href="../index.html">
+                            <h1> Servicios &nbspDe&nbsp Banquetería Favy</h1>
+                        </a> </div>
+                </header>
 
-    <header>
-    <div class="contTitulo"><a href="../index.html"> <h1> Servicios &nbspDe&nbsp Banquetería  Favy</h1></a> </div>       
-    <div class="div-nav"> 
-    <nav>
-        <ul class="menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../index.html#secQuienesSomos">Quiénes Somos?</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./galeria.html">Galería</a></li>
-            <li><a href="./serviciosespeciales.html">Servicios Especiales</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    </div>  
-    </header> 
-    
-    <!--Termino de Navegación-->
- 
+            </div>
+        </div>
 
-    <main>
-        <section id="secFormContact" class="secFormContact">
-            <form action="" method="post" class="formContact">
-               <label for="name">Nombre</label>
-               <input type="text" name="nombre" id="idNombre" placeholder="Escribe tu nombre">
+        <div class="row">
 
-               <label for="email">Correo</label>
-               <input type="email" name="mail" id="idMail" placeholder="tucorreo@mail.com">
+            <div class="div-nav col-md-4 col-sm-12">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../index.html#secQuienesSomos">Quiénes Somos?</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./galeria.html">Galería</a></li>
+                        <li><a href="./serviciosespeciales.html">Servicios Especiales</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-               <select name="selectConsulta" id="selectConsulta">
-                   <option value="cotizacion">Cotización</option>
-                   <option value="pedido">Pedido</option>
-               </select>
-               
-               <label for="consulta">Escribenos</label>
-               <textarea name="consulta" id="idConsulta" cols="50" rows="20" placeholder="Escribe tu comentario"></textarea>
+            <!--Termino de Navegación-->
 
-               <input type="submit" value="Enviar">
-            </form>
 
-    </main>
-    
-    <footer>
+
+
+
+            <div class="formContacto col-md-8 col-sm-12">
+                <main>
+                    <form action="" method="post" class="formContact">
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Tu correo</label>
+                            <input type="email" class="form-control" id="" placeholder="tucorreo@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="consulta" class="form-label">Escribenos tu consulta!</label>
+                            <textarea class="form-control" id="" rows="12"></textarea>
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="Enviar">
+                    </form>
+                </main>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-muted">
         <span>Servicios de banquetería Favy S.A. </span>
         <span>Todos los derechos reservados - Camilo Montecino 2022</span>
     </footer>
+    <script src="../js/bootstrap.js"></script>
 </body>
 
 </html>
