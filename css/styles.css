@@ -27,7 +27,7 @@
 
 /* Grilla */
 
-#grilla {
+/* #grilla {
     display: grid;
     width: 95vw;
     height: 100vh;
@@ -43,7 +43,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     gap: 10px;
-}
+} */
 
 
 /* Estilos del Body */
@@ -53,6 +53,7 @@ body {
     background-image: url("../img/a6.jpg");
     background-size: contain;
 }
+
 
 p,
 dt,
@@ -176,6 +177,15 @@ table tbody tr td {
     background-position: center;
 }
 
+.banner img{
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+
 section,
 article {
     text-align: center;
@@ -237,7 +247,7 @@ a {
 .menu li:hover {
     background-color: #f8edeb;
     border: 1px solid #a77b37;
-    transform: translateY(-10px);
+    transform: translateX(10px);
     color: #a77b37;
 }
 
@@ -256,7 +266,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: 300px;
-    width: 100%;
+    width: 600px;
 }
 
 .div-img img {
@@ -269,13 +279,19 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+.menu {
+    flex-direction: column;
+}
+ol,ul{
+    padding-left:0;
 }
 
-/* Vista en Mobile*/
-@media screen and (max-width:900px) {
 
-    #grilla-img {
+/* Vista en Mobile*/
+ @media screen and (max-width:768px) {
+
+    /* #grilla-img {
 
         grid-template-rows: 1fr repeat(4, auto);
         grid-template-columns: repeat(2, 1fr);
@@ -286,11 +302,11 @@ a:hover {
             "nav secFotos"
             "footer footer";
 
-    }
+    } */
 
 
 
-    #grilla {
+    /* #grilla {
 
         grid-template-rows: 1fr repeat(4, 1fr);
         grid-template-columns: repeat(2, 1fr);
@@ -300,11 +316,8 @@ a:hover {
             "nav section1"
             "section2 section2"
             "footer footer";
-    }
+    } */
 
-    .menu {
-        flex-direction: column;
-    }
 
     .menu li:hover {
         transition: none;
@@ -316,7 +329,7 @@ a:hover {
         transition: none;
     }
 
-    #header {
+    /* #header {
         grid-area: header;
     }
 
@@ -348,8 +361,9 @@ a:hover {
 
     footer {
         grid-area: footer;
-    }
+    } */
 }
+
 
 /*Fin vista Mobile */
 
