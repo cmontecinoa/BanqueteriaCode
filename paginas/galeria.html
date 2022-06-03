@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,73 +10,79 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <!--Grilla-->
-    <div class="grilla-img" id="grilla-img">
+    <div class="container">
         <!--Navegación -->
-        <div class="elemento-grilla" id="header"> 
-            <header>
-                <div class="contTitulo"><a href="../index.html"> <h1> Servicios &nbspDe&nbsp Banquetería  Favy</h1></a> </div>       
-                <div class="div-nav"> 
-            </header> 
+        <div class="row" id="header">
+            <div class="col-md-12 col-sm-12">
+                <header>
+                    <div class="contTitulo"><a href="../index.html">
+                            <h1> Servicios &nbspDe&nbsp Banquetería Favy</h1>
+                        </a> </div>
+
+                </header>
+            </div>
         </div>
-        <div class="div-nav elemento-grilla" id="nav">
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../index.html#secQuienesSomos">Quiénes Somos?</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./galeria.html">Galería</a></li>
-                    <li><a href="./serviciosespeciales.html">Servicios Especiales</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>  
-        
-        <!--Termino de Navegación-->
+        <div class="row">
+            <div class="div-nav col-md-4 col-sm-12" id="nav">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../index.html#secQuienesSomos">Quiénes Somos?</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./galeria.html">Galería</a></li>
+                        <li><a href="./serviciosespeciales.html">Servicios Especiales</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Termino de Navegación-->
 
 
-            <div class="elemento-grilla" id="secIframe">
+            <div class="col-md-6 col-sm-12" id="secIframe">
                 <h2 class="display-5">Presentación</h2>
-                
-                <section class="secIframe">
-                
 
-                    <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/EKKDR1x6IVY" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    alt="Video de presentación"
-                    allowfullscreen ></iframe>
+                <section class="secIframe">
+
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EKKDR1x6IVY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        alt="Video de presentación" allowfullscreen></iframe>
 
                 </section>
 
             </div>
-            
-            <div class="elemento-grilla" id="secFotos">
-            <section class="secFotos ">
-            
-            <h2>Nuestros trabajos</h2>
-            <div class="flex-container">
-                <div class="flex-child">
-                    <img src="../img/img1.jpg" alt="Servicio de canapes 50p">
-                </div>
-                <div class="flex-child">
-                    <img src="../img/img2.jpg" alt="Canapes Premium">
-                </div>
-                <div class="flex-child">
-                    <img src="../img/img3.webp" alt="Servicio de catering">
-                </div>
-                <div class="flex-child">
-                    <img src="../img/img4.jpg" alt="Tabla de canapes pan de hamburgesas">
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12" id="secFotos">
+                <section class="secFotos ">
 
-            </div>
+                    <h2 class="display-5">Nuestros trabajos</h2>
+                    <div class="flex-container">
+                        <div class="flex-child">
+                            <img src="../img/img1.jpg" alt="Servicio de canapes 50p">
+                        </div>
+                        <div class="flex-child">
+                            <img src="../img/img2.jpg" alt="Canapes Premium">
+                        </div>
+                        <div class="flex-child">
+                            <img src="../img/img3.webp" alt="Servicio de catering">
+                        </div>
+                        <div class="flex-child">
+                            <img src="../img/img4.jpg" alt="Tabla de canapes pan de hamburgesas">
+                        </div>
 
-            </section>
+                    </div>
+
+                </section>
             </div>
-        
-        <footer class="elemento-grilla">  
+        </div>
+
+        <footer class="text-muted">
             <span>Servicios de banquetería Favy S.A. </span>
             <span>Todos los derechos reservados - Camilo Montecino 2022</span>
         </footer>

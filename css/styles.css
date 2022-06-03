@@ -1,7 +1,4 @@
-* {
-    padding: 0px;
-    box-sizing: border-box;
-}
+
 
 
 @font-face {
@@ -25,31 +22,8 @@
 }
 
 
-/* Grilla */
-
-/* #grilla {
-    display: grid;
-    width: 95vw;
-    height: 100vh;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-}
-
-#grilla-img {
-    display: grid;
-    width: 95vw;
-    height: 100vh;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-} */
-
-
 /* Estilos del Body */
 body {
-
-    /*background-color: #6FFFE9; */
     background-image: url("../img/a6.jpg");
     background-size: contain;
 }
@@ -153,6 +127,7 @@ table tbody tr td {
 
 
 /* Estilos de Clase*/
+
 .contTitulo h1 {
     font-size: 30px;
     color: #f8edeb;
@@ -283,6 +258,7 @@ a:hover {
 .menu {
     flex-direction: column;
 }
+
 ol,ul{
     padding-left:0;
 }
@@ -290,34 +266,6 @@ ol,ul{
 
 /* Vista en Mobile*/
  @media screen and (max-width:768px) {
-
-    /* #grilla-img {
-
-        grid-template-rows: 1fr repeat(4, auto);
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "header header"
-            "nav secIframe"
-            "nav secFotos"
-            "nav secFotos"
-            "footer footer";
-
-    } */
-
-
-
-    /* #grilla {
-
-        grid-template-rows: 1fr repeat(4, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "header header"
-            "nav banner"
-            "nav section1"
-            "section2 section2"
-            "footer footer";
-    } */
-
 
     .menu li:hover {
         transition: none;
@@ -328,57 +276,13 @@ ol,ul{
         transform: none;
         transition: none;
     }
-
-    /* #header {
-        grid-area: header;
-    }
-
-    #nav {
-        align-items: flex-start;
-        grid-area: nav;
-    }
-
-    #banner {
-        grid-area: banner;
-
-    }
-
-    #secQuienesSomos {
-        grid-area: section1;
-    }
-
-    #secGlosario {
-        grid-area: section2;
-    }
-
-    #secFotos {
-        grid-area: secFotos;
-    }
-
-    #secIframe {
-        grid-area: secIframe;
-    }
-
-    footer {
-        grid-area: footer;
-    } */
 }
-
-
 /*Fin vista Mobile */
 
-
-/*Activar para ver las grillas*/
-
-/*.elemento-grilla{
-    border: 1px solid white;         
-} 
-*/
-
-
-/* Fin estilos de Grilla */
-
-footer,
-form {
+form{
     color: #f8edeb;
+}
+
+footer{
+    padding-top:10px;
 }
