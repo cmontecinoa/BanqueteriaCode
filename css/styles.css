@@ -206,6 +206,8 @@ a {
 
 .menu {
     display: flex;
+    flex-direction: column;
+    align-content: stretch;
 }
 
 .menu li {
@@ -217,6 +219,8 @@ a {
     padding: 2px;
     margin: 4px;
     color: #f8edeb;
+    flex-direction: column;
+    align-content: stretch;
 }
 
 .menu li:hover {
