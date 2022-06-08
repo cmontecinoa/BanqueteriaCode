@@ -35,10 +35,10 @@ dd,
 table {
     display: inline-block;
     text-align: center;
-    color: black;
+    color: #f8edeb;
     font-family: "Redressed";
     font-size: 20px;
-    text-shadow: 0 0 3px white;
+    text-shadow: 0 0 3px black;
 }
 
 dt {
@@ -168,12 +168,11 @@ article {
 
 .redondeado {
     text-align: center;
-    border-radius: 10px;
-    background-image: url("../img/back2.jpg");
-    background-size: contain;
+    background-image: url("../img/border1.png");
+    background-size: 100% 100%;
     background-position: center;
-    object-fit: contain;
-    padding: 10px;
+    padding: 35px;
+    background-repeat:no-repeat;
     display: inline-table;
 }
 
@@ -181,7 +180,9 @@ article {
     text-align: center;
 }
 
-
+.marginado{
+    color: #f8edeb;
+}
 .marginado li {
     font-weight: bold;
 }
