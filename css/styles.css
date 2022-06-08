@@ -196,7 +196,6 @@ article {
     list-style-type: none;
 }
 
-
 a {
     text-decoration: none;
     font-family: "redressed";
@@ -207,6 +206,8 @@ a {
 
 .menu {
     display: flex;
+    flex-direction: column;
+    align-content: stretch;
 }
 
 .menu li {
@@ -218,6 +219,8 @@ a {
     padding: 2px;
     margin: 4px;
     color: #f8edeb;
+    flex-direction: column;
+    align-content: stretch;
 }
 
 .menu li:hover {
@@ -230,7 +233,6 @@ a {
 a:hover {
     color: #a77b37;
 }
-
 .secIframe {
     display: flex;
     justify-content: center;
@@ -256,9 +258,7 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
-.menu {
-    flex-direction: column;
-}
+
 
 ol,ul{
     padding-left:0;
