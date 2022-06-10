@@ -1,0 +1,313 @@
+/*Imports */
+@import 'fonts';
+@import 'variables';
+/*Fin Imports */
+
+/*Estilos del Nav */
+.div-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: "redressed";
+    font-size: 40px;
+    color: $color-texto;
+    transition: color 1s;
+
+    &:hover {
+        color: #a77b37;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    padding-left: 0;
+
+    li {
+        display: flex;
+        border: 1px solid $color-texto;
+        background-color: #a77b37;
+        text-shadow: 0 0 1px black;
+        transition: background-color 1s, border 1s, transform 1s, color 1s;
+        padding: 2px;
+        margin: 4px;
+        color: $color-texto;
+        flex-direction: column;
+        align-content: stretch;
+
+        &:hover {
+            background-color: $color-texto;
+            border: 1px solid #a77b37;
+            transform: translateX(10px);
+            color: #a77b37;
+
+        }
+    }
+}
+
+/*Fin Estilos del Nav*/
+
+
+/* Estilos del Body */
+body {
+    background-image: url("../img/a6.jpg");
+    background-size: contain;
+}
+
+
+p,
+dt,
+dd {
+    display: inline-block;
+    text-align: center;
+    color: $color-texto;
+    font-family: "Redressed";
+    font-size: 20px;
+    text-shadow: 0 0 3px black;
+    padding: 5px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+nav {
+    ul {
+        li {
+            list-style-type: none;
+            border-radius: 10px;
+            text-shadow: 0 0 2px white;
+        }
+    }
+}
+
+h2,
+h1 {
+    margin: 10px;
+    color: $color-texto;
+    font-weight: bold;
+    font-family: "FreeBooters";
+    text-shadow: 0 0 1px black;
+    text-align: center;
+}
+
+/*Estilos Tabla*/
+
+.container-table {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.60), rgba(5, 7, 12, 0.60)), url(../img/serviciosespeciales3.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+
+}
+
+table {
+    text-align: center;
+    color: $color-texto;
+    font-family: "Redressed";
+    font-size: 20px;
+    text-shadow: 0 0 1px $color-texto;
+    border-collapse: collapse;
+    border: 3px solid $color-texto;
+    box-sizing: border-box;
+    table-layout: auto;
+    height: 100%;
+}
+
+table {
+    tr {
+        td {
+            table {
+                tr {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+table {
+    tbody {
+        tr {
+            td {
+                table {
+                    background-image: none;
+                    border-style: none;
+                    display: inline-table;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+table {
+    tbody {
+        tr {
+            td {
+                border: none;
+            }
+        }
+    }
+}
+
+/* Fin estilos tabla */
+
+/* Estilos del Flexbox */
+
+.flex-container {
+    margin: 10px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-child {
+    margin: 5px;
+    height: 300px;
+    width: 900x;
+
+}
+
+.flex-child {
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+}
+
+/* Fin Estilos del Flexbox */
+
+/* Estilos de Clase*/
+
+.contTitulo {
+    h1 {
+        font-size: 30px;
+        color: $color-texto;
+        text-shadow: 0 0 1px black;
+        font-weight: bold;
+        font-family: "FreeBooters";
+        text-align: center;
+        padding-bottom: 90px;
+        padding-top: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+
+    }
+}
+
+.contTitulo {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/contTitulo.png");
+    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner {
+    img {
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+    }
+}
+
+section,
+article {
+    text-align: center;
+}
+
+.redondeado {
+    text-align: center;
+    background-image: url("../img/border1.png");
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 45px;
+    background-repeat: no-repeat;
+    display: inline-table;
+}
+
+.container-productos {
+    text-align: center;
+}
+
+.marginado {
+    color: $color-texto;
+    list-style-type: none;
+
+    li {
+        font-weight: bold;
+
+    }
+
+    li {
+        ul {
+            li {
+                list-style-type: none;
+                font-weight: lighter;
+            }
+        }
+    }
+}
+
+.secIframe {
+    display: flex;
+    justify-content: center;
+
+}
+
+.div-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 600px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+    }
+}
+
+/*Fin estilos Clases */
+
+
+form {
+    color: $color-texto;
+}
+
+footer {
+    padding-top: 10px;
+}
+
+/* Vista en Mobile*/
+@media screen and (max-width:768px) {
+
+    .menu li:hover {
+        transition: none;
+        transform: none;
+    }
+
+    a:hover {
+        transform: none;
+        transition: none;
+    }
+}
+
+/*Fin vista Mobile */
