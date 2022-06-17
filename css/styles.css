@@ -210,7 +210,73 @@ article {
     height: 100%;
     object-fit: contain; }
 
-/*Fin estilos Clases */
+/*Fin Estilos Clases */
+/* Estilos Slider Banner */
+.carousel-indicators {
+  background-color: #a77b37;
+  border-radius: 15%;
+  margin-right: 35%;
+  margin-left: 35%; }
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1; }
+  .carousel-control-prev .carousel-control-prev-icon,
+  .carousel-control-prev .carousel-control-next-icon,
+  .carousel-control-next .carousel-control-prev-icon,
+  .carousel-control-next .carousel-control-next-icon {
+    background-color: #a77b37;
+    border-radius: 50%; }
+
+/* Fin estilos Slider Banner */
+.social-bar {
+  position: fixed;
+  left: 0;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1; }
+  .social-bar .icon-facebook {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../img/facebook-icon.png"); }
+  .social-bar .facebook-icon {
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/facebook-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .social-bar .instagram-icon {
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/instagram-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .social-bar .whatsapp-icon {
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/whatsapp-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .social-bar .color--facebook {
+    color: #3b5998; }
+  .social-bar .color--instagram {
+    color: #dd2a7b; }
+  .social-bar .color--whatsapp {
+    color: #00bb2d; }
+
+.texto-suelto, .bastardito1, .bastardito2, .bastardito3 {
+  color: white;
+  background-color: gold; }
+
+.bastardito1, .bastardito2, .bastardito3 {
+  opacity: 0.5;
+  width: 325px;
+  height: 325px; }
+
 form {
   color: #f8edeb; }
 

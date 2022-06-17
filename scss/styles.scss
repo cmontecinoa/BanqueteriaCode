@@ -1,6 +1,7 @@
 /*Imports */
 @import 'fonts';
 @import 'variables';
+@import 'mixins';
 /*Fin Imports */
 
 /*Estilos del Nav */
@@ -42,9 +43,9 @@ a {
 
         &:hover {
             background-color: $color-texto;
-            border: 1px solid #a77b37;
+            border: 1px solid $color-texto-secundario;
             transform: translateX(10px);
-            color: #a77b37;
+            color: $color-texto-secundario;
 
         }
     }
@@ -58,7 +59,6 @@ body {
     background-image: url("../img/a6.jpg");
     background-size: contain;
 }
-
 
 p,
 dt,
@@ -95,6 +95,8 @@ h1 {
     text-shadow: 0 0 1px black;
     text-align: center;
 }
+
+
 
 /*Estilos Tabla*/
 
@@ -285,7 +287,91 @@ article {
     }
 }
 
-/*Fin estilos Clases */
+/*Fin Estilos Clases */
+
+/* Estilos Slider Banner */
+
+.carousel-indicators {
+    background-color: $color-texto-secundario;
+    border-radius: 15%;
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: $color-texto-secundario;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+/* Fin estilos Slider Banner */
+
+// Estilos del Social Bar
+
+.social-bar {
+    position: fixed;
+    left: 0;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+
+    .icon-facebook {
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/facebook-icon.png");
+    }
+
+    @each $redSocial in facebook,
+    instagram,
+    whatsapp {
+        .#{$redSocial}-icon {
+            width: 75px;
+            height: 75px;
+            background-image: url("../img/#{$redSocial}-icon.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+    }
+
+    //Gradientes :hover por terminar   <---------------
+
+    @each $redGradient,
+    $color in $colores-redes {
+        .color--#{$redGradient} {
+            color: $color;
+        }
+    }
+}
+
+// Fin Estilos del Social bar
+
+// Estilos de bastarditos,  Uso de Extends Mixin y Get map.
+
+.texto-suelto{
+    color:map-get($colores-sueltos,text);
+    background-color: map-get($colores-sueltos,primary);
+}
+
+.bastardito1, .bastardito2, .bastardito3{
+    @extend .texto-suelto;
+    opacity: 0.5;
+    @include sizes(325px,325px);
+}
+
+//Fin estilo de bastarditos
 
 
 form {
