@@ -236,7 +236,7 @@ article {
 .redondeado {
     text-align: center;
     background-image: url("../img/border1.png");
-    background-size: 100% 100%;
+    background-size: 100% 90%;
     background-position: center;
     padding: 45px;
     background-repeat: no-repeat;
@@ -285,6 +285,18 @@ article {
         object-fit: contain;
 
     }
+}
+
+
+.div-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .card-img-top{
+        border-radius: 15px;
+    }
+
 }
 
 /*Fin Estilos Clases */
@@ -358,21 +370,15 @@ article {
 
 // Fin Estilos del Social bar
 
-// Estilos de bastarditos,  Uso de Extends Mixin y Get map.
+// Estilos de tarjetas, Uso de Extends Mixin y Get map.
 
-.texto-suelto{
-    color:map-get($colores-sueltos,text);
-    background-color: map-get($colores-sueltos,primary);
+.texto-carta{
+    color: map-get($colores-sueltos, text);
+    background-color: map-get($colores-sueltos, primary);
+    @include sizes(325px, 100px);
+    @extend footer;
+
 }
-
-.bastardito1, .bastardito2, .bastardito3{
-    @extend .texto-suelto;
-    opacity: 0.5;
-    @include sizes(325px,325px);
-}
-
-//Fin estilo de bastarditos
-
 
 form {
     color: $color-texto;
