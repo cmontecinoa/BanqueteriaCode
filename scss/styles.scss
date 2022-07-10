@@ -28,6 +28,7 @@ a {
 .menu {
     display: flex;
     flex-direction: column;
+
     li {
         display: flex;
         border: 1px solid $color-texto;
@@ -84,10 +85,17 @@ nav {
     }
 }
 
-h2,
 h1 {
     margin-top: 10px;
     color: $color-texto;
+    font-weight: bold;
+    font-family: "FreeBooters";
+    text-shadow: 0 0 1px black;
+    text-align: center;
+}
+
+h2 {
+    color: black;
     font-weight: bold;
     font-family: "FreeBooters";
     text-shadow: 0 0 1px black;
@@ -103,7 +111,7 @@ h1 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top:15px;
+    margin-top: 15px;
     display: flex;
 
 }
@@ -219,12 +227,13 @@ article {
     display: inline-table;
 }
 
-.container-productos{
+.container-productos {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container-servicios{
+
+.container-servicios {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,9 +285,18 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    .card-img-top{
-        border-radius: 15px;
+
+    .card {
+        overflow: hidden;
+
+        .card-img-top {
+            border-radius: 15px;
+            transition: transform .5s ease;
+        }
+        .card-img-top:hover {
+            transform: scale(1.5);
+
+        }
     }
 
 }
@@ -314,31 +332,33 @@ article {
 
 .social-bar {
     position: fixed;
-    left: 0;
+    right: 0;
     top: 35%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     z-index: 1;
 
-    .icon-facebook {
-        width: 100px;
-        height: 100px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-image: url("../img/facebook-icon.png");
-    }
-
     @each $redSocial in facebook,
     instagram,
     whatsapp {
         .#{$redSocial}-icon {
-            width: 75px;
-            height: 75px;
-            background-image: url("../img/#{$redSocial}-icon.png");
+            width: 80px;
+            height: 80px;
+            background: url("../img/#{$redSocial}-icon.png");
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 80%;
+            background-position: center;
+            transition: 1s;
+            opacity: 80%;
 
+
+        }
+
+        .#{$redSocial}-icon:hover {
+            background-size: 100%;
+            background-position: center;
+            opacity: 100%;
         }
     }
 
@@ -356,10 +376,10 @@ article {
 
 // Estilos de tarjetas, Uso de Extends Mixin y Get map.
 
-.texto-carta{
+.texto-carta {
     color: map-get($colores-sueltos, text);
     background-color: map-get($colores-sueltos, primary);
-    @include sizes(325px, 100px);
+    @include sizes(250px, 50px);
     @extend footer;
 
 }
