@@ -54,8 +54,8 @@ a {
 /*Fin Estilos del Nav*/
 /* Estilos del Body */
 body {
-  background-image: url("../img/a6.jpg");
-  background-size: contain; }
+  background-image: url("../img/backtest2.jpg");
+  background-size: cover; }
 
 p,
 dt,
@@ -91,7 +91,8 @@ h1 {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  display: inline-block; }
+  margin-top: 15px;
+  display: flex; }
 
 table {
   text-align: center;
@@ -163,7 +164,14 @@ article {
   display: inline-table; }
 
 .container-productos {
-  text-align: center; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.container-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .marginado {
   color: #f8edeb;

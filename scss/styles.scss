@@ -54,8 +54,8 @@ a {
 
 /* Estilos del Body */
 body {
-    background-image: url("../img/a6.jpg");
-    background-size: contain;
+    background-image: url("../img/backtest2.jpg");
+    background-size: cover;
 }
 
 p,
@@ -103,7 +103,8 @@ h1 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    display: inline-block;
+    margin-top:15px;
+    display: flex;
 
 }
 
@@ -189,7 +190,6 @@ table {
 /* Fin Estilos del Flexbox */
 
 /* Estilos de Clase*/
-
 .titulo {
     width: 80%;
     height: 80%;
@@ -219,8 +219,16 @@ article {
     display: inline-table;
 }
 
-.container-productos {
-    text-align: center;
+.container-productos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .marginado {

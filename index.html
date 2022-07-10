@@ -13,73 +13,77 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <a href='https://www.freepik.es/fotos/fondo-tiza'>Foto de fondo tiza creado por rawpixel.com - www.freepik.es</a> -->
 </head>
 
 <body>
-    <!-- Fin row 1 -->
-    <!-- Row 2 -->
+    <!-- Row 1 -->
     <!--Navegación -->
+    <div class="container">
+        <div class="row">
+            <div class="div-nav col-md-3 col-sm-12">
 
-    <div class="row">
-        <div class="div-nav col-md-3 col-sm-12">
-
-            <nav>
-                <ul class="menu">
-                    <a href="../index.html"><img src="../img/titulo.png" class="titulo">
-                        </img></a>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../index.html#secQuienesSomos">Quiénes Somos?</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./galeria.html">Galería</a></li>
-                    <li><a href="./serviciosEspeciales.html">Servicios Especiales</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!--Termino de Navegación-->
-        <!-- Futuro Slider o Banner -->
-        <div class="col-md-9 col-sm-12 my-auto">
+                <nav>
+                    <ul class="menu">
+                        <a href="./index.html"><img src="../img/titulo.png" class="titulo">
+                            </img></a>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./index.html#secQuienesSomos">Quiénes Somos?</a></li>
+                        <li><a href="./paginas/productos.html">Productos</a></li>
+                        <li><a href="./paginas/galeria.html">Galería</a></li>
+                        <li><a href="./paginas/serviciosEspeciales.html">Servicios Especiales</a></li>
+                        <li><a href="./paginas/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
 
 
+            <!--Termino de Navegación-->
+            <!-- Futuro Slider o Banner -->
+            <div class="col-md-9 col-sm-12 my-auto mx-auto">
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/banner.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/banner2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/banner3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/banner.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/banner2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/banner3.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
 
-
-        <!-- Fin Futuro Slider o Banner -->
     </div>
-    <!-- Fin row 2 -->
+
+
+    <!-- Fin Futuro Slider o Banner -->
+
+    <!-- Fin row 1 -->
 
     <!-- Social Bar Fixed -->
     <div class="social-bar">
@@ -95,12 +99,13 @@
 
 
 
-    <!-- Row 3 -->
+    <!-- Row 2 -->
+    <div class="container">
     <div class="row">
         <div class="col-md-6 col-sm-12" id="secQuienesSomos">
             <section>
                 <article>
-                    <h2 class="display-5">¿Quiénes Somos?</h2>
+                    <h1>¿Quiénes Somos?</h1>
 
                     <p class="redondeado"> Favy S.A es una empresa que ofrece servicios de banquetería y despacho de
                         encargos de catering.
@@ -120,7 +125,7 @@
         <div class="col-md-6 col-sm-12" id="secGlosario">
             <section>
 
-                <h2 class="display-5">Glosario</h2>
+                <h1>Glosario</h1>
 
                 <dl class="redondeado">
 
@@ -140,9 +145,11 @@
             </section>
         </div>
     </div>
-    <!-- Fin row 3 -->
+</div>
+    <!-- Fin row 2 -->
 
-    <!-- El nombre de las clases son a razón de que aún no tienen un padre :c, apegado a la definición y sin ánimos de ofender -->
+    <!-- row 3 -->
+    <div class="container">
     <div class="row">
 
         <div class="div-cards col-md-4 col-sm-12">
@@ -182,8 +189,8 @@
 
     </div>
 
-
-    <!-- Fin de semejante aberración -->
+</div>
+    <!-- Fin de row 3 -->
 
 
 
