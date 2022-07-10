@@ -207,12 +207,12 @@ article {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .div-cards .card {
+  .div-cards .card .cont-card-img-top {
     overflow: hidden; }
-    .div-cards .card .card-img-top {
+    .div-cards .card .cont-card-img-top .card-img-top {
       border-radius: 15px;
       transition: transform .5s ease; }
-    .div-cards .card .card-img-top:hover {
+    .div-cards .card .cont-card-img-top .card-img-top:hover {
       transform: scale(1.5); }
 
 /*Fin Estilos Clases */
@@ -237,7 +237,7 @@ article {
 .social-bar {
   position: fixed;
   right: 0;
-  top: 35%;
+  top: 5%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
