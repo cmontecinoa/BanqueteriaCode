@@ -148,8 +148,11 @@ table tbody tr td {
 /* Fin Estilos del Flexbox */
 /* Estilos de Clase*/
 .titulo {
-  width: 80%;
-  height: 80%; }
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  width: 350px;
+  height: 350px; }
 
 .banner img {
   justify-content: center;
