@@ -22,6 +22,16 @@
   justify-content: center;
   align-items: center; }
 
+.div-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.div-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 a {
   box-sizing: border-box;
   text-decoration: none;
