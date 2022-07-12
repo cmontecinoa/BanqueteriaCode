@@ -5,11 +5,22 @@
 /*Fin Imports */
 
 /*Estilos del Nav */
-.div-nav {
+.div-nav{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.div-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 a {
     box-sizing: border-box;
@@ -182,9 +193,6 @@ table {
 
 .flex-child {
     margin: 5px;
-    height: 300px;
-    width: 900x;
-
 }
 
 .flex-child {
@@ -202,8 +210,8 @@ table {
     justify-content: center;
     align-items: center;
     object-fit: contain;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
 
 .banner {
@@ -265,6 +273,7 @@ article {
 .secIframe {
     display: flex;
     justify-content: center;
+    align-items: center;
 
 }
 

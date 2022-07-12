@@ -136,9 +136,7 @@ table tbody tr td {
   align-items: center; }
 
 .flex-child {
-  margin: 5px;
-  height: 300px;
-  width: 900x; }
+  margin: 5px; }
 
 .flex-child img {
   max-width: 100%;
@@ -151,8 +149,8 @@ table tbody tr td {
   justify-content: center;
   align-items: center;
   object-fit: contain;
-  width: 350px;
-  height: 350px; }
+  width: 300px;
+  height: 300px; }
 
 .banner img {
   justify-content: center;
@@ -193,7 +191,8 @@ article {
 
 .secIframe {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .div-img {
   display: flex;
